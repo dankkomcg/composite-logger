@@ -1,0 +1,18 @@
+{
+    "name": "dankkomcg/composite-logger",
+    "description": "Logger manager based on class composition.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dankkomcg\\Composite\\": "src"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "dankkomcg/php-logger": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
