@@ -3,3 +3,4 @@ node_modules
 .idea
 tests/Project
 .phpunit.result.cache
+build
