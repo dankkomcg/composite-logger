@@ -19,22 +19,9 @@ Install the library via Composer:
 composer require dankkomcg/composite-logger
 ```
 
-Ensure you also have the base PHP Logger library installed:
-
-```bash
-composer require dankkomcg/php-logger
-```
-
-Include the autoloader in your PHP script:
-
-```php
-<?php
-require_once dirname(__FILE__) . '/vendor/autoload.php';
-```
-
 ## Usage
 
-### Basic Example
+### Basic example
 
 Here's how you can set up a composite logger to log both to a file and the console:
 
@@ -66,9 +53,13 @@ Composite Logger provides specific types of composite loggers, each designed for
 
 ### Available Composite Loggers
 
+Default loggers included:
+
 - **SimpleCompositeLogger**: This logger allows you to combine multiple loggers in a straightforward manner. It logs messages to all included loggers, making it easy to manage logging across various outputs.
 
 - **InverseCompositeLogger**: This logger provides an inverse logging mechanism, where it can be configured to exclude certain loggers based on specific conditions or configurations. It's useful for scenarios where you want to prevent logging in certain outputs under specific circumstances.
+
+These are only examples. Check the implementation details.
 
 ### Implementation Details
 
@@ -89,7 +80,6 @@ To run tests, use PHPUnit:
 ## Requirements
 
 - PHP 7.4 or later.
-- PHP Logger library.
 
 ## License
 
