@@ -1,11 +1,11 @@
 {
     "name": "dankkomcg/composite-logger",
-    "description": "Logger manager based on class composition.",
+    "description": "Extension of PHP Logger to composite the log functions.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Dankkomcg\\Composite\\": "src"
+            "Dankkomcg\\Logger\\Composite\\": "src"
         }
     },
     "require": {
