@@ -45,7 +45,23 @@ abstract class CompositeLogger implements Logger {
      * @return void
      */
     public abstract function addLogger(Logger $logger): void;
-    
-    protected abstract function write(string $message, string $level): void;
+
+    public function write(string $message, string $level): void
+    {
+        $this->emitMessageToLoggers($message, $level);
+    }
+
+    /**
+     * @param string $message
+     * @param string $level
+     * @return void
+     */
+    private function emitMessageToLoggers(string $message, string $level): void
+    {
+        /** @var Logger $logger */
+        foreach ($this->loggers as $logger) {
+            $logger->$level($message, $level);
+        }
+    }
 
 }

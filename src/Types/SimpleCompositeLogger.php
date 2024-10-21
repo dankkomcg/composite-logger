@@ -18,10 +18,4 @@ class SimpleCompositeLogger extends CompositeLogger {
         $this->loggers[] = $logger;
     }
 
-    protected function write(string $message, string $level): void {
-        foreach ($this->loggers as $logger) {
-            $logger->$level($message);
-        }
-    }
-
 }

@@ -32,11 +32,4 @@ class InverseCompositeLogger extends CompositeLogger {
 
     }
 
-    protected function write(string $message, string $level): void
-    {
-        foreach ($this->loggers as $logger) {
-            $logger->$level($message, $level);
-        }
-    }
-
 }

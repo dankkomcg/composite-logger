@@ -1,7 +1,7 @@
 {
     "name": "dankkomcg/composite-logger",
     "description": "Extension of PHP Logger library that allows you to create compositions of loggers.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "library",
     "license": "MIT",
     "autoload": {
