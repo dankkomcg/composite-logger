@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e250914368d63aac01c6f736f47c2d71",
+    "content-hash": "da6d7d361437d64bd4d69ead5d2e3926",
     "packages": [
         {
             "name": "dankkomcg/php-logger",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dankkomcg/php-logger.git",
-                "reference": "f2aec6fae3db297397012134a1055ef14b7fc015"
+                "reference": "081e7c43c1a6ca135f5f5ab975021483a1e9e627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dankkomcg/php-logger/zipball/f2aec6fae3db297397012134a1055ef14b7fc015",
-                "reference": "f2aec6fae3db297397012134a1055ef14b7fc015",
+                "url": "https://api.github.com/repos/dankkomcg/php-logger/zipball/081e7c43c1a6ca135f5f5ab975021483a1e9e627",
+                "reference": "081e7c43c1a6ca135f5f5ab975021483a1e9e627",
                 "shasum": ""
             },
             "require": {
@@ -40,9 +40,9 @@
             "description": "A simple PHP log library",
             "support": {
                 "issues": "https://github.com/dankkomcg/php-logger/issues",
-                "source": "https://github.com/dankkomcg/php-logger/tree/1.0.0"
+                "source": "https://github.com/dankkomcg/php-logger/tree/1.1.0"
             },
-            "time": "2024-10-21T10:05:25+00:00"
+            "time": "2024-10-21T15:14:55+00:00"
         },
         {
             "name": "monolog/monolog",

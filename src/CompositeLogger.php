@@ -45,7 +45,7 @@ abstract class CompositeLogger implements Logger {
      * @return void
      */
     public abstract function addLogger(Logger $logger): void;
-
+    
     protected abstract function write(string $message, string $level): void;
 
 }

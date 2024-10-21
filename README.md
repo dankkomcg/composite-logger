@@ -1,7 +1,5 @@
 # PHP Composite Logger
 
-# PHP Logger
-
 ![PHP Version](https://img.shields.io/badge/php-%3E%3D7.4-blue.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/dankkomcg/composite-logger)

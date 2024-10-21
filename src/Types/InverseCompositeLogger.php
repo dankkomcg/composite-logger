@@ -35,7 +35,7 @@ class InverseCompositeLogger extends CompositeLogger {
     protected function write(string $message, string $level): void
     {
         foreach ($this->loggers as $logger) {
-            $logger->write($message, $level);
+            $logger->$level($message, $level);
         }
     }
 

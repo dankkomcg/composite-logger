@@ -20,12 +20,14 @@ final class CompositeLoggerTest extends TestCase
         $consoleLogger = $this->getMockBuilder(ColourConsoleLogger::class)
             ->setConstructorArgs([['info' => 'blue']])
             ->onlyMethods(['info'])
-            ->getMock();
+            ->getMock()
+        ;
 
         $consoleLogger->method('info')
             ->willReturnCallback(function($message) use (&$consoleOutput) {
                 $consoleOutput .= $message;
-            });
+            })
+        ;
 
         // File Logger
         $fileLogger = new MonologFileLogger($filePath, 'test');
