@@ -32,8 +32,7 @@ require_once dirname(__FILE__) . '/vendor/autoload.php';
 
 use Dankkomcg\Logger\Types\Console\LightColourConsoleLogger;
 use Dankkomcg\Logger\Types\File\MonologFileLogger;
-use Dankkomcg\CompositeLogger\CompositeLogger;
-Dankkomcg\Logger\Composite\SimpleCompositeLogger;
+use Dankkomcg\Logger\Composite\SimpleCompositeLogger;
 
 $consoleLogger = new LightColourConsoleLogger(['info' => 'blue']);
 $fileLogger = new MonologFileLogger(dirname(__FILE__) . '/app.log', 'app');
